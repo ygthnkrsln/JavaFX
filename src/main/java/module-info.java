@@ -1,6 +1,7 @@
 module com.example.javafx {
     requires javafx.controls;
     requires javafx.fxml;
+    requires javafx.media;
 
 
     opens com.example.javafx to javafx.fxml;
@@ -14,4 +15,6 @@ module com.example.javafx {
     opens com.example.javafx.Chapter15.LoanCalculator to javafx.fxml;
     exports com.example.javafx.Chapter15.BouncingBall;
     opens com.example.javafx.Chapter15.BouncingBall to javafx.fxml;
+    exports com.example.javafx.Chapter16;
+    opens com.example.javafx.Chapter16 to javafx.fxml;
 }
